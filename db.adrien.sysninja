@@ -1,0 +1,17 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	ns.adrien.com	 root.adrien.com (
+			     14		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	ns.adrien.com
+ns	IN	A	192.168.2.50
+*	IN	A 	192.168.2.50
+@	IN	AAAA	::1
+
+
